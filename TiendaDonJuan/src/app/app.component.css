@@ -1,0 +1,66 @@
+/* src/app/app.component.css */
+
+/* Efecto hover para las tarjetas de productos */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Estilos para el encabezado */
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+/* Mejorar la apariencia de los botones */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para el carrito sticky */
+.sticky-top {
+  z-index: 1020;
+}
+
+/* Animación para items del carrito */
+.border-bottom {
+  transition: background-color 0.3s ease;
+}
+
+.border-bottom:hover {
+  background-color: #f8f9fa;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .sticky-top {
+    position: relative !important;
+    top: 0 !important;
+  }
+}
+
+/* Mejora de scrollbar en el carrito */
+.card-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.card-body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.card-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
