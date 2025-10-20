@@ -1,9 +1,11 @@
 // src/app/models/product.interface.ts
 
 export interface Product {
-  id: number;
+  _id?: string;
   nombre: string;
   precio: number;
   imagen: string;
   descripcion: string;
+  disponible?: boolean;
+  stock?: number;
 }
