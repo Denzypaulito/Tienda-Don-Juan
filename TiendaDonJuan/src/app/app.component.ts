@@ -2,7 +2,6 @@
 
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
 import { Product } from './models/product.interface';
 import { ProductService } from './services/product.service';
 import { CartService, Cart } from './services/cart.service';
